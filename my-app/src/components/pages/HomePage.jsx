@@ -2,6 +2,7 @@ import { useState } from "react";
 import pixel8 from "../../assets/images/pixel 8.jpg";
 import pixel9 from "../../assets/images/Pixel 9.jpg";
 import pixelFold from "../../assets/images/pixel fold.jpg";
+import CounterApp from "../views/homeViews/CounterApp";
 
 const initialPhones = [
   { id:1,  model:"Pixel 9 Pro XL", series:"Pro",      price:1099, ram:16, storage:256, battery:5060, year:2024, stock:"In Stock"     },
@@ -431,7 +432,7 @@ const HomePage = () => {
 
         </div>
       </section>
-
+      <CounterApp />
       {/* ── EDIT MODAL ── */}
       {showModal && (
         <div onClick={e=>{if(e.target===e.currentTarget)setShowModal(false);}}
