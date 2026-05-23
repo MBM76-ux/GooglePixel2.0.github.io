@@ -30,7 +30,6 @@ const StudentsPage = () => {
             + Add Student
           </Link>
         </div>
-
         {students.length === 0
           ? <p style={{ color: "#6b7280", fontFamily: "monospace" }}>No students yet.</p>
           : students.map((s) => (
